@@ -1,0 +1,22 @@
+1. Điều kiện nạp chồng hàm
+2. 
+Con trỏ hằng
+const int *p = &a;
+- KHÔNG THỂ thay đổi giá trị của địa chỉ mà nó chỏ đến
+- CÓ THỂ thay đổi giá trị của nó
+
+
+Hằng con trỏ
+int *const p = &a;
+- KHÔNG THỂ thay đổi giá trị của nó
+- CÓ THỂ Thay đổi giá trị của nó chỏ đến
+
+Hằng tham chiếu
+void add(const int &a);
+
+3.
+- toán tử =, [] phải là hàm thành viên của class
+- toán tử <<, >> phải là hàm bạn của class. vì tham số là luồng
+- toán tử ++, -- phải là tiền tố và hậu tố
+	- tiền tố: operator++(), operator--()
+	- hậu tố: operator++(int), operator--(int)
